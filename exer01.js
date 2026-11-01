@@ -22,6 +22,8 @@ console.log(questaoH)
 console.log(questaoI)
 console.log(questaoJ)
 
+console.log("Teste de atualização no GitHub!");
+
 
 
 /*1. Expressões numéricas – Qual é o valor numérico de cada uma das seguintes
