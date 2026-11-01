@@ -1,0 +1,22 @@
+Como atualizar daqui para frente:
+
+Sempre que modificar seus códigos JavaScript:
+1. Salve com Ctrl + S.
+2. Abra o terminal.
+3. Execute estes três comandos:
+
+
+
+
+1 :execute 
+
+git status
+
+2:
+git add .
+
+3:
+git commit -m "Organizando exercicios JavaScript por assunto"
+
+4:
+git push
