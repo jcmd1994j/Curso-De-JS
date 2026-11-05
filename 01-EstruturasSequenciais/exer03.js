@@ -1,19 +1,14 @@
-const readlineSync =require('readline-sync')
+const readlineSync=require('readline-sync')
 
-const nome =readlineSync.question("Qual é seu nome ?");
-const endereco=readlineSync.question("Qual é seu endereço?");
-const cidade=readlineSync.question("Qual sua cidade ?");
-const estado=readlineSync.question("Qual seu estado ?");
-const telefone=readlineSync.question("Número de telefone ?");
-const profissao=readlineSync.question("Sua profissão ?");
+const nome=readlineSync.question('Qual é seu nome ?')
+const endereco=readlineSync.question('Qual é seu Endereço,Cidade ,Estado,CP')
+const telefone=readlineSync.question('Qual seu telefone ?')
+const profissao=readlineSync.question('Qual sua atuação  profissional ?')
 
-console.log(`Nome:${nome}`)
-console.log(`Endereço:${endereco,cidade,estado}`)
-console.log(`Cidade:${cidade}`)
-console.log(`Estado:${estado}`)
-console.log(`Telefone:${telefone}`)
-console.log(`Profissão:${profissao}`)
-
+console.log(`Meu nome é : ${nome}`)
+console.log(`Endereço Completo: ${endereco}`)
+console.log(`Meu telefone é : ${telefone}`)
+console.log(`Minha atuação profissonal é : ${profissao}`)
 
 
 
