@@ -1,18 +1,14 @@
-const readlineSny=require('readline-sync')
-const milha=Number(readlineSny.question("Quantas milhas será percorrido ?"));
-
-
-polegadas=milha*63360;
-pes=milha*5280;
-jardas=milha*2025.37
-
-
-console.log(`Valor da distância de ${milha} milhas em polegadas : ${polegadas}`)
-console.log(`Valor da distância de ${milha} milhas em pés : ${pes}`)
-console.log(`Valor da distância de ${milha} milhas em jardas : ${jardas}`)
+const readlineSync=require('readline-sync')
+const milhas =Number(readlineSync.question('Quantas milhas você percorreu?'))
 
 
 
+
+
+
+const polegadas = 63360*milhas;
+const pes =5260*milhas;
+const jardas= 2025.37 *milhas;
 
 
 

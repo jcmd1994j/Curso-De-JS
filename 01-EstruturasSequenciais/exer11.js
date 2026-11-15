@@ -1,11 +1,13 @@
-const readlineSny=require('readline-sync')
+const readlineSync=require('readline-sync')
 
-const temperatura=Number(readlineSny.question("Qual o valor da temperatura?"));
+const celcisGraus=Number(readlineSync.question('Quantos graus está fazendo?'))
 
-celsus=9/5 * temperatura + 32
+const calculoFormulaCelsios=9*5/celcisGraus+32;
+const calculoFormulafAH=9*5/celcisGraus-32;
 
 
-
+console.log(`Valor convertido de celsius para Fahrenheit: ${calculoFormulaCelsios} graus`)
+console.log(`Valor Fahrenheit para Celsios: ${calculoFormulafAH} graus`)
 
 
 

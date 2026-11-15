@@ -1,17 +1,18 @@
-const readlineSync=require('readline-sync')
+const readlineSync=require ('readline-sync')
 
-const velocidade=Number(readlineSync.question("Qual foi a sua velocidade ?"))
-
-
-distancia5horas=velocidade*5;
-distancia8horas=velocidade*8;
-distancia12horas=velocidade*12;
+const distancia=Number(readlineSync.question("Qual distância que o carro está andando?"))
 
 
-console.log(`Valor de 5 horas percorrido ${distancia5horas} km/h`);
-console.log(`Valor de 8 horas percorrido ${distancia8horas} km/h`);
-console.log(`Valor de 12 horas percorrido ${distancia12horas} km/h`);
 
+
+calculo5horas= distancia*5;
+calculo8horas= distancia*8;
+calculo12horas= distancia*12;
+
+
+console.log( `A distância que o carro percorrerá em 5 horas : ${calculo5horas} horas.`) 
+console.log( `A distância que o carro percorrerá em 8 horas  : ${calculo8horas} horas .`) 
+console.log( `A distância que o carro percorrerá em 12 horas  : ${calculo12horas} horas .`) 
 
 
 

@@ -1,24 +1,24 @@
-
-const readlineSny=require('readline-sync')
-
-quantCompradas=1000/32.87;
-acaoCompradas=1000*32.87;
-taxaCompras=acaoCompradas*2/1000;
-acoesCompradaDois=1000*33.92;
-taxaComprasDois=acaoCompradasDois*2/100;
+const readlineSync=require('readline-sync')
+const acoes=100 * 32.87;
+const corretagem=acoes*2/100;
+const vendeu=corretagem * 33.92;
+const tranlacao=vendeu*2/100;
+ 
 
 
+console.log(`A quantia que José pagou pelas ações : ${acoes}`); 
+console.log (`O valor da comissão que José pagou ao seu corretor quando ele comprou as ações ${corretagem}`); 
+console.log (`A quantia pela qual José vendeu as ações ${vendeu}`); 
+console.log(`A quantia de comissão que José pagou ao seu corretor quando ele vendeu as ações ${tranlacao}`); 
+console.log(`Mostre a quantia que José ganhou ao vender as ações e pagar o corretor.${corretagem}`) 
 
-console.log(`A quantia que José pagou pelas ações : ${acaoCompradas} R$`);
-console.log(`O valor da comissão que José pagou ao seu corretor quando ele comprou as ações : ${taxaCompras} R$`);
-console.log(`A quantia pela qual José vendeu as ações : ${acaoCompradasDois}R$`);
-console.log(` A quantia de comissão que José pagou ao seu corretor quando ele vendeu as ações : ${taxaComprasDois} R$`)
-console.log(`A quantidade de ações compradas : ${quantCompradas} R$`)
+modificacão//
 
-
-
-
-
+console.log (` A quantidade de ações compradas ${acoes}`); 
+console.log(` O valor de cada ação no momento da compra`); 
+console.log (`O valor percentual da comissão na compra`); 
+console.log  (`O valor de cada ação no momento da venda`)
+console.log(`O valor percentual da comissão na venda.`)
 
 
 

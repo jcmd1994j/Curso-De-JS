@@ -1,18 +1,10 @@
-const readlineSny=require('readline-sync')
-const galoes=Number(readlineSny.question("Quantos quartos de galões de tinta sera usados ?"));
+const readlineSync=require('readline-sync')
 
+const galoes =Number(readlineSync.question('Quantos quartos ele vai pintar?'))
 
+ const calculoGaloes = 0.25/galoes;
 
-calculoGalao=galoes/0.25;
-
-console.log(`Quantos galões será utilizados: ${calculoGalao} quartos`)
-
-
-
-
-
-
-
+console.log(`Vai precisa de ${calculoGaloes} galões`)
 
 
 

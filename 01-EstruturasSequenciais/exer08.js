@@ -1,15 +1,15 @@
 const readlineSync=require('readline-sync')
-const compras=Number(readlineSync.question("Qual valor das compras ?"));
 
-estadual=compras*4/100;
-municipal=compras*2/100;
-subtotal=estadual+municipal;
+const venda=Number(readlineSync.question('Qual valor da venda ?'))
 
+impostoEstadual=venda*4/100;
+impostoMunicipal=venda*2/100;
+valorTotal=venda+impostoEstadual+impostoMunicipal;
 
-console.log(`Valor das compras : ${compras} R$`);
-console.log(`Valor dos impostos Estaduais : ${estadual} R$`);
-console.log(`Valor dos impostos Municipais : ${municipal} R$`);
-console.log(`Valor do Subtotal das vendas  : ${subtotal} R$`);
+console.log(`Valor da venda ${venda} $ `)
+console.log(`Valor do Imposto Estatual  ${impostoEstadual} %`)
+console.log(`Valor da Imposto Municipal : ${impostoMunicipal} %`)
+console.log(`Valor total das vendas : ${valorTotal} $`)
 
 
 

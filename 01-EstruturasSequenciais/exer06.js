@@ -1,20 +1,25 @@
-const readlineSync=require('readline-sync');
+const readlineSync=require('readline-sync')
 
-const tenis=Number(readlineSync.question("Qual valor de tênis ?"));
-const bolsa=Number(readlineSync.question("Valor da bolsa ?"));
-const saia=Number(readlineSync.question("Qual valor da saia ?"));
-const calca=Number(readlineSync.question("Valor da calça?"));
-const blusa=Number(readlineSync.question("Qual valor da bolsa ?"));
+const notbook=Number(readlineSync.question('Qual valor desse notbook?'))
+const mouse =Number(readlineSync.question('Qual valor desse mouse?'))
+const secador=Number(readlineSync.question('Qual valor desse secador?'))
+const chapinha =Number(readlineSync.question('Qual valor dessa chapinha?'))
+const malainteligente=Number(readlineSync.question('Qual valor dessa mala inteligente?'))
+
+calculoSubtotal=notbook+mouse+secador+chapinha+malainteligente;
+calculoImposto6=calculoSubtotal*6/100;
+calculoTotal=calculoSubtotal+calculoImposto6;
+
+console.log(`Notbook: ${notbook} $`)
+console.log(`Mouse: ${mouse} $`)
+console.log(`secador: ${secador} $`)
+console.log(`chapinha: ${chapinha} $`)
+console.log(`Mala inteligente : ${malainteligente} $`)
 
 
-subtotal=tenis+blusa+saia+calca+blusa;
-imposto=subtotal*6/100;
-
-console.log(`Valor do subtotal das compras : ${subtotal} R$`);
-console.log(`Valor dos impostos : ${imposto} R$`);
-
-
-
+console.log(`subtotal de venda :${calculoSubtotal} $`)
+console.log(`Imposto da  venda :${calculoImposto6} %`)
+console.log(`total de venda :${calculoTotal} $`)
 
 
 

@@ -1,14 +1,12 @@
-const readlineSny=require('readline-sync')
-const biscoitos=Number(readlineSny.question("Quantos biscoitos forao consumidos?"));
+const readlineSync=require('readline-sync')
+
+const bisc=Number(readlineSync.question('Quantos biscoitos você comeu cara ?'))
+
+const calorias=bisc*300;
+
+console.log(`Calorias obtidas :${calorias} calorias`)
 
 
-
-calorias=biscoitos*300;
-
-
-console.log(`bistoitos consumidos: ${biscoitos}`)
-
-console.log(`Calorias consumidas : ${calorias}`)
 
 
 

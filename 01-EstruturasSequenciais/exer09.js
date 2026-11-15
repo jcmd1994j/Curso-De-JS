@@ -1,26 +1,19 @@
-const readlineSync=require('readline-sync')
+const readlineSync= require ('readline-sync')
 
-const milhas =Number(readlineSync.question("Quantas milhas Roberto Percorreu?"));
-const galoes=Number(readlineSync.question("Quantos galões forão consumidos ?"))
-
+const milhas =Number(readlineSync.question(' Quantas milhas um determinado carro percorreu ?'))
+const galoes=Number(readlineSync.question(' Quantos galões de gasolina forão consumidos ?'))
 
 
 calculo=milhas/galoes;
 
-milhasCalculo=1,60934/3,785;
 
 
-console.log(`Valor de milhas ${milhas}`)
-console.log(`Valor de galôes ${galoes}`)
-console.log(`Valor do calculo de minhas percorridas em galões ${calculo}`)
+console.log(`Forão percoridos ${calculo}km/h`)
 
+/*modificação*/
 
-console.log(`calculo com número ja com as milhas : ${milhasCalculo}`)
-
-
-
-
-
+calculo02= 1.60934/3.785  
+console.log(`Forão percoridos ${calculo02}km/h`)
 
 
 

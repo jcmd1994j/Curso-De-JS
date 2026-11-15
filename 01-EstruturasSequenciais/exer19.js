@@ -1,14 +1,19 @@
-const readlineSny=require('readline-sync')
-
-const ovosduzia=Number(readlineSny.question("Quantas duzias você irar comprar?"));
-const ovosunidade=Number(readlineSny.question("Quantas unidades de ovos você ira comprar?"));
-
-calculoOvosDuzia=ovosduzia*3.25;
-calculoOvosUnidade=ovosunidade*ovosduzia*0.45;
+const readlineSync=require('readline-sync')
 
 
-console.log(`O cliente deve pagar R$ ${calculoOvosDuzia} pelas ${ovosduzia} duzias , e R$ 
-${calculoOvosUnidade} pelos ${ovosunidade} ovos”.`)
+const ovosDuzia=Number(readlineSync.question('Quantas duzias de ovos você comprou?'))
+const ovosUnidade=Number(readlineSync.question('Quantas unidades de  ovos você comprou?'))
+
+const calculoDuzia=3.25*ovosDuzia;
+const calculoUnidade=0.45*ovosUnidade;
+
+
+
+console.log(`Maria comprou ${ovosDuzia} duzias de ovos , e ${ovosUnidade} unidades de ovos e pagou na duzia ${calculoDuzia} e nas unidades de ovos ${calculoUnidade}   `)
+
+
+
+
 
 
 

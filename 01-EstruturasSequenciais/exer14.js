@@ -1,21 +1,13 @@
-const readlineSny=require('readline-sync')
-const homens=Number(readlineSny.question("Quantos homens na sala de aula?"));
-const mulheres=Number(readlineSny.question("Quantos mulheres na sala de aula?"));
+const readlineSync=require('readline-sync')
+const homens=Number(readlineSync.question('Quantos homens tem na sala ?'))
+const mulheres=Number(readlineSync.question('Quantas mulheres tem na sala ?'))
 
+const porctHomens=homens/mulheres;
+const porctMulheres=mulheres/homens;
 
-
-
-porcentagem=homens/mulheres;
-
-
-
-console.log(`diferença de porcetagem de homens e mulheres: ${porcentagem} %`)
-
-console.log(`homens : ${homens} 
-     mulheres : ${mulheres}`)
-
-
-
+console.log(`Totaliza :${homens+mulheres} Alunos`)
+console.log(`Totaliza % de homens :${porctHomens} %`)
+console.log(`Totaliza % de mulheres  :${porctMulheres} %`)
 
 
 

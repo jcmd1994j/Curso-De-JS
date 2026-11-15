@@ -1,16 +1,18 @@
-const readlineSny=require('readline-sync');
-const refeicao=Number(readlineSny.question("Qual valor da refeição?"));
+
+const readlineSync = require('readline-sync');
+
+const refeicao = Number(readlineSync.question('Qual valor da refeicao? R$ '));
 
 
-gorjeta=refeicao*15/100;
-imposto=refeicao*7/100;
-valorTotal=gorjeta+imposto+refeicao;
 
+ const gorjeta=refeicao * 15 /100;
+ const imposto=refeicao * 7 /100;
+ const totalRefeicao=refeicao+gorjeta+imposto;
 
-console.log(`Valor da refeição: ${refeicao} R$`);
-console.log(`Valor da gorjeta: ${gorjeta} R$`);
-console.log(`Valor do imposto: ${imposto} R$`);
-console.log(`Valor da total: ${valorTotal} R$`);
+console.log(`Valor da refeição: ${refeicao} $`)
+console.log(`Valor da gorjeta: ${gorjeta} $`)
+console.log(`Valor do imposto : ${imposto} $ `)
+console.log(`Valor total da refeição: ${totalRefeicao} $`)
 
 
 

@@ -1,28 +1,26 @@
 
-const readlineSny=require('readline-sync')
-const adultos=Number(readlineSny.question("Quantos tickets de adultos  ?"));
-const criancas=Number(readlineSny.question("Quantos tickets de crianças  ?"));
+const readlineSync=require('readline-sync')
+const crianca=Number(readlineSync.question( 'Quantos tickets de criança?'))
+const adulto=Number(readlineSync.question( 'Quantos tickets de adulto?'))
+
+const calculoCrianca=crianca*12;
+const calculoAdulto=adulto*20;
+const totalApagar=calculoAdulto+calculoCrianca;
+const lucroCrianca=calculoCrianca*5.35;
+const lucroAdulto=calculoAdulto*7.10;
 
 
-calculoAdulto=adultos*20;
-calculoCriancas=criancas*12;
-valorTotal=calculoAdulto+calculoCriancas;
+console.log(`total de ticket de criança:${crianca}`)
+console.log(`total de ticket de Adulto:${adulto}`)
+console.log(`Lucro com os custos da criança:${lucroCrianca}`)
+console.log(`Lucro com os custos do adulto:${lucroAdulto}`)
 
 
-console.log(`O cliente deve pagar R$ ${calculoAdulto} pelos ${adultos} tickets de 
-refeição para adultos e R$ ${calculoCriancas} pelos ${criancas} tickets de refeição para crianças, 
-totalizando R$ ${valorTotal}`)
+console.log(`Total de ticket a pagar:${totalApagar}`)
 
 
-////////////////Modificação:
 
-porcentagemAdulto=adultos*7;
-porcentagemCrianca=criancas*5;
-valorTotalDeporcetagem=porcentagemAdulto+porcentagemCrianca;
 
-console.log(`lucro em porcentagem em adultos: ${porcentagemAdulto} %`)
-console.log(`lucro em porcentagem crianças: ${porcentagemCrianca} %`)
-console.log(`Totalizando ${valorTotalDeporcetagem + valorTotal} R$`)
 
 
 

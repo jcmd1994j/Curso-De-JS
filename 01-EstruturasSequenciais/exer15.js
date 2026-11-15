@@ -1,35 +1,16 @@
-const readlineSny=require('readline-sync')
-const biscoitos=Number(readlineSny.question("Quantos biscoitos vai fazer ?"));
+const  readlineSync=require('readline-sync')
+
+const cookies=Number(readlineSync.question('Quantos cukies você vai fazer?'))
 
 
+const acucar=1.5*cookies;
+const mateiga=1*cookies;
+const farinha=2.75*cookies;
 
-acucar=1.5*biscoitos;
-mateiga=1*biscoitos;
-farinha=2.75*biscoitos;
-
-
-console.log(`Para uma receita de  : ${biscoitos} Biscoitos`);
-console.log(`É preciso de : ${acucar} xicaras de açucar`)
-console.log(`É preciso de : ${mateiga} xicaras de mateiga`)
-console.log(`É preciso de : ${farinha} xicaras de farinhar`)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log( `Pra fazer ${cookies} unid`)
+console.log( `Precisa de ${acucar} açucar`)
+console.log( `Precisa de ${mateiga} mateiga`)
+console.log( `Precisa de ${farinha} farinha`)
 
 
 

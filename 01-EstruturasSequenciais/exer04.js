@@ -1,16 +1,10 @@
 const readlineSync=require('readline-sync')
- 
-const vendas =Number(readlineSync.question("Valor de vendas ?"));
 
-porcet=vendas*23/100;
+const vendas=Number(readlineSync.question('Valor total de vendas ?'))
 
-console.log(`Valor das vendas ${vendas}`)
-console.log(`Porcetagem nas vendas : ${porcet}%`)
+ lucro=vendas*23/100;
 
-
-
-
-
+console.log(`Lucro de vendas foi : ${lucro} $`)
 
 
 
