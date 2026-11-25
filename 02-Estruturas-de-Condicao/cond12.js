@@ -1,59 +1,27 @@
-const readlineSync= require ("readline-sync");
-const rg=Number (readlineSync.question("Qual o RG Cliente?"));
-const nome=readlineSync.question("Qual o nome do dog?");
-const raca=readlineSync.question("Qual a raça do dog?");
-const idade=Number (readlineSync.question("Qual idade do dog?"));
-const peso=Number (readlineSync.question("Qual o peso do dog?"));
+const readlineSync=require('readline-sync') 
+const rg=Number(readlineSync.question('Qual seu Rg?'))
+const nomeCao=readlineSync.question('Qual nome do seu cão?')
+const raca=readlineSync.question('Qual a raça do seu cão?')
+const idade=Number(readlineSync.question('Qual a idade do seu cão?'))
+const peso=Number(readlineSync.question('Qual peso do seu cão?'))
 
-if(8 >= peso){
-  calculo50=50;  
-  console.log("rg:",rg);
-  console.log("NOME DO DOG:",nome);
-  console.log("RAÇA DODOG:",raca);
-  console.log("IDADE DO DOG:",idade);
-  console.log("TAXA:",calculo50,"R$");
-  console.log("PESO DO DOG:",peso,"KG");
-  
-
+if(peso <= 8 ){
+console.log(`Você paga : 50 $`)
+} 
+else if(peso <= 8 && peso > 15){
+console.log(`Você paga : 70 $`)
 }
-else if(8 >= peso > 15){
-    calculo70=70;  
-    console.log("rg:",rg);
-    console.log("NOME DO DOG:",nome);
-    console.log("RAÇA DODOG:",raca);
-    console.log("IDADE DO DOG:",idade);
-    console.log("TAXA:",calculo70,"R$");
-    console.log("PESO DO DOG:",peso,"KG");
-    
-  
+ else if(peso <= 15 && peso <= 40){
+console.log(`Você paga : 100 $`)
 }
-else if(15 <= peso >= 40){
-    calculo100=100;  
-    console.log("rg:",rg);
-    console.log("NOME DO DOG:",nome);
-    console.log("RAÇA DODOG:",raca);
-    console.log("IDADE DO DOG:",idade);
-    console.log("TAXA:",calculo100,"R$");
-    console.log("PESO DO DOG:",peso,"KG");
-  
-}
-
 else if(peso >= 40){
-    calculo125=125;  
-    console.log("rg:",rg);
-    console.log("NOME DO DOG:",nome);
-    console.log("RAÇA DODOG:",raca);
-    console.log("IDADE DO DOG:",idade);
-    console.log("TAXA:",calculo125,"R$");
-    console.log("PESO DO DOG:",peso,"KG");
-  
+console.log(`Você paga : 125 $`)
 }
-else{
-    console.log("erro")
-}
-
-
- 
+console.log(`Idade do cão:${idade} `)
+console.log(`RG do Proprietário :${rg} `)
+console.log(`Nome do cão:${nomeCao} `)
+console.log(`Raça do cão:${raca} `)
+console.log(`Peso cão:${raca} `)
 
 
 
